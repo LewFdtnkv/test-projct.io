@@ -1,0 +1,148 @@
+body{
+  margin-top: 100px;
+
+}
+.main_window{
+  display: flex;
+  justify-content: center;
+  background-color:#f0f0f0;
+  flex-direction: column;
+  margin: 400px;
+  margin-top: 100px;
+  align-items: center;
+  padding: 20px;
+  
+}
+.h1_title{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 3rem;
+  font-weight: 300; 
+  color: #f2c2c2;
+  letter-spacing: 2px;
+  user-select: none;
+}
+.input_window{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset;
+}
+
+.todo-app {
+  font-family: sans-serif;
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input_window {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.input_window::placeholder {
+  color: #aaa;
+}
+
+.downOutlined {
+  color: #aaa;
+  margin-right: 10px;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #aaa;
+  user-select: none;
+}
+
+.fa-check-circle,
+.fa-circle {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.span {
+  flex: 1;
+  user-select: none;
+}
+.button_window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding: 10px 10px;
+  font-size: 14px;
+  color: #777;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.items-left {
+  flex: 1;
+  text-align: left;
+  color: #4d4d4d;
+  margin-right: 10px;
+}
+
+.button_group {
+  display: flex;
+  gap: 10px;
+}
+
+.filter_button {
+  background: none;
+  border: none;
+  color: #777;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.filter_button.active {
+  border: 1px solid #ddd;
+  color: #000;
+}
+
+.filter_button:hover {
+  border: 1px solid #ddd;
+  color: #000;
+}
+
+.clear_button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #777;
+
+}
+
+.clear_button:hover {
+  text-decoration: underline;
+}
