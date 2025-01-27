@@ -12,9 +12,10 @@ interface ModeProps {
 }
 
 export default function Buttons({ mode, setMode, clearCompleted, todos }: ModeProps) {
+  const completedTodosCount = todos.filter(todo => !todo.completed).length; 
   return (
     <div className="button_window">
-      <span className="items-left">{todos.length} items left</span>
+      <span className="items-left">{completedTodosCount} items left</span>
       <div className="button_group">
         <button
           onClick={() => setMode('All')}

@@ -146,3 +146,16 @@ body{
 .clear_button:hover {
   text-decoration: underline;
 }
+/* .checkbox_button{
+  display: flex;
+  background-color: #fff;
+  margin-right: 10px;
+} */
+.incomplete_icon{
+  display: flex;
+  color: #fff;
+  margin-right: 10px;
+}
+.completed_icon{
+  margin-right: 10px;
+}

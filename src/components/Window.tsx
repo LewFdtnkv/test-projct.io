@@ -50,7 +50,7 @@ export default function Window({ todos, setTodos, mode }: WindowProps) {
       <Input
         className="input_window"
         placeholder="What needs to be done?"
-        prefix={<DownOutlined onClick={handleToggleVisibility} />}
+        prefix={<DownOutlined  onClick={handleToggleVisibility} />}
         onChange={(e) => setNewTodo(e.target.value)}
         value={newTodo}
         onPressEnter={handleAddTodo}
@@ -66,9 +66,9 @@ export default function Window({ todos, setTodos, mode }: WindowProps) {
             >
               <div className="todo-icon-container">
                 {todo.completed ? (
-                  <FaCheckCircle className="completed-icon" />
+                  <FaCheckCircle className="completed_icon" />
                 ) : (
-                  <FaCircle className="incomplete-icon" />
+                  <FaCircle className="incomplete_icon" />
                 )}
               </div>
               <span>{todo.text}</span>
